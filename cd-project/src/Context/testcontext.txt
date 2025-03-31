@@ -1,0 +1,87 @@
+import React, { createContext, useEffect, useState } from 'react'
+// import all_product from '../Components/Assets/all_product'
+
+
+
+
+// const getdefaultcart=()=>{
+//   let cart={}
+
+//   for (let index = 0; index < all_product.length; index++) {
+//     cart[index]=0;
+
+    
+//   }
+//   return cart
+// }
+
+
+export const ShopContext=createContext(null);
+const getdefaultcart=()=>{
+   let cart={};
+   for (let index = 0; index < 300+1; index++) {
+    cart[index]=0;
+   }
+   return cart;
+}
+
+
+
+
+
+const ShopContextProvider = (props) => {
+
+  // const [cartItems, setcartItems] = useState(getdefaultcart())
+  const [all_product, set_allproduct] = useState([])
+
+  // console.log(cartItems);
+  
+
+
+  const [cartItems, setcartItems] = useState(getdefaultcart())
+
+
+
+  useEffect(()=>{
+    fetch('http://localhost:4010/allproducts')
+    .then((response)=>response.json())
+    .then((data)=>{set_allproduct(data)})
+
+  },[])
+
+
+
+  const addToCart = (itemId) => {
+    setcartItems((prev) => {
+      const updatedCart = {
+        ...prev,
+        [itemId]: prev[itemId] === 0 ? 1 : prev[itemId], 
+      };
+  
+      console.log("Cart after clicking Add to Cart:", updatedCart); // Logs the updated cart
+      return updatedCart;
+    });
+  };
+ 
+    const removeFromCart = (itemId) => {
+    setcartItems((prev) => ({
+      ...prev,
+      [itemId]: prev[itemId] > 0 ? prev[itemId] - 1 : 0, 
+    }));
+  };
+  
+  
+    const contextValue = {all_product,cartItems,addToCart,removeFromCart};  
+
+
+  return (
+    <ShopContext.Provider value={contextValue}>
+      {props.children}
+
+    </ShopContext.Provider>
+   
+  )
+}
+
+export default ShopContextProvider;
+
