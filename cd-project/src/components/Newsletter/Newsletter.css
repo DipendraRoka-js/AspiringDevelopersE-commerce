@@ -1,0 +1,86 @@
+.Newsletter{
+  width: 65%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 100px;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(150deg, rgb(73, 0, 156), white);
+  gap: 30px;
+}
+
+.Newsletter h1{
+  color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+
+
+}
+.Newsletter p{
+  color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.Newsletter input{
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+
+
+}
+.Newsletter input::placeholder{
+  color: rgb(111, 110, 110);
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 200;
+}
+
+
+.Newsletter button{
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  border: 1px light;
+  color: rgb(0, 0, 0);
+  border-radius: none;
+  border: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-weight: 40px;
+  font-size: large;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-left: 50px;
+  padding: 5px;
+
+}
+
+.Newsletter button:hover{
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+
+/* .Newsletter button:active{
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+} */
+
+.Newsletter hr{
+  width: 40%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  margin-top: -40px;
+  margin-bottom: 40px;
+
+}
+

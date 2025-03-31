@@ -1,0 +1,77 @@
+.hero-img{
+  margin-left: 1000px;
+  height: 100vh;
+  /* height: 50vh; */
+  margin-top: -600px;
+}
+
+.hand-icon{
+  height: 15vh;
+  margin-left: 170px;
+  margin-top: -120px;
+
+}
+
+
+.collections{
+  font-size: 70px;
+  color: rgb(201, 122, 122);
+  font-weight: 700;
+  margin-top: -20px;
+}
+.for-everyone{
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-top: -90px;
+
+}
+.new{
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: -30px;
+
+}
+
+
+
+
+.arrow-btn{
+  border-radius: 30px;
+  width: 350px;
+  height: 70px;
+  border: 1px light;
+  color: rgb(0, 0, 0);
+  border-radius: none;
+  border: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-weight: 40px;
+  font-size: large;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+
+}
+.arrow-btn:hover{
+  background-color: #000000;
+  color: white;
+}
+
+.big-hero{
+  background: linear-gradient(100deg, #8600f3, #ffffff); /* Pinkish to Whitish */
+  height: 100vh;
+
+}
+
+
+.hero-left{
+  margin-top: -10px;
+  margin-left: 200px;
+  padding-top: 100px;
+  color: white;
+  font-size: 20px;
+}

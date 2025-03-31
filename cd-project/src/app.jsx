@@ -1,43 +1,49 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
-import viteLogo from '/vite.svg'
-import './app.css'
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ShopCategory from './Pages/ShopCategory';
+import Product from './Pages/Product';
+import Cart from './Pages/Cart';
+import Footer from './Components/Footer/Footer';
+import men_banner from './Components/Assets/banner_mens.png'
+import women_banner from './Components/Assets/banner_women.png'
+import kids_banner from './Components/Assets/banner_kids.png'
+import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
+// import Chatbot from "./Components/Chatbot.js";
 
-export function App() {
-  const [count, setCount] = useState(0)
+
+
+function App() {
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://preactjs.com" target="_blank">
-          <img src={preactLogo} class="logo preact" alt="Preact logo" />
-        </a>
-      </div>
-      <h1>Vite + Preact</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/app.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p>
-        Check out{' '}
-        <a
-          href="https://preactjs.com/guide/v10/getting-started#create-a-vite-powered-preact-app"
-          target="_blank"
-        >
-          create-preact
-        </a>
-        , the official Preact + Vite starter
-      </p>
-      <p class="read-the-docs">
-        Click on the Vite and Preact logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Shop/>}/>
+        {/* <Chatbot /> */}
+
+        <Route path='/mens' element={<ShopCategory banner={men_banner} category='men'/>}/>
+        <Route path='/womens' element={<ShopCategory banner={women_banner} category='women'/>}/>
+        <Route path='/kids' element={<ShopCategory banner={kids_banner} category='kid'/>}/>
+        <Route path='/product/:productId' element={<Product></Product>}>
+           <Route path=':productId' element={<Product></Product>}/>
+
+
+        </Route>
+        <Route path='/cart' element={<Cart/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/signup' element={<SignUp/>}></Route>
+      </Routes>
+
+      </BrowserRouter>
+
+      <Footer/>
+
+     
+    </div>
+  );
 }
+
+export default App;
