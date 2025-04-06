@@ -2,7 +2,7 @@ import React from 'react'
 
 const client = () => {
   return (
-    <div>This is the testinomial for a client</div>
+    <div>This is the testinomial for a clients</div>
   )
 }
 
