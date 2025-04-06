@@ -28,7 +28,7 @@
 }
 
 .Newsletter input{
-  font-size: 30px;
+  font-size: 31px;
   border-radius: 10px;
   padding: 5px;
   border: none;
@@ -37,7 +37,7 @@
 
 }
 .Newsletter input::placeholder{
-  color: rgb(111, 110, 110);
+  color: rgb(111, 110, 111);
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 200;
@@ -75,7 +75,7 @@
 } */
 
 .Newsletter hr{
-  width: 40%;
+  width: 41%;
   height: 3px;
   background-color: rgb(0, 0, 0);
   border: none;
