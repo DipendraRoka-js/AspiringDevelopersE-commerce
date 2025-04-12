@@ -1,0 +1,65 @@
+.listproduct button{
+  width: 120px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  padding: 4px ;
+  cursor: pointer;
+  background-color: blanchedalmond;
+  border-radius: 14px;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  height: 5vh;
+
+}
+
+.listproduct button:hover{
+  background-color: black;
+  color: white;
+}
+
+.listproduct button:active{
+  background-color: white;
+  color: black;
+}
+
+.listproduct-format-main{
+  display: flex;
+  color: rgb(95, 95, 95);
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: 250px;
+  font-size:20px;
+  font-family: "Poppins";
+
+  
+
+}
+.imagesMate{
+  width: 70px;
+  cursor: pointer;
+}
+.listproduct-format-main-boom{
+  gap: 40px;
+  margin: 20px;
+  color: rgb(255, 0, 43);
+
+
+  display: flex;
+  /* color: rgb(95, 95, 95); */
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 250px;
+  font-size:20px;
+  font-family: "Poppins";
+}
+
+.cross_icon{
+  width: 10px;
+  height: 3vh;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
