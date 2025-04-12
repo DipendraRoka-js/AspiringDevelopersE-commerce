@@ -1,0 +1,36 @@
+
+.new-collections h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  font-weight: 600;
+  align-items: center;
+  color: rgb(98, 0, 128);
+  margin-left: 600px;
+
+
+}
+
+.new-collections hr{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(98, 0, 128);
+  margin-top: -20px;
+  margin-bottom: 40px;
+
+
+}
+
+.new-collection-item {
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust columns */
+  gap: 130px; /* Space between items */
+  justify-items: center; /* Center items in their grid cells */
+  margin-left: 100px;
+  margin-right: 80px;
+}
+
+.new-collection-item img {
+  width: 100%; /* Adjust as needed */
+  max-width: 300px; /* Optional: limit max size of images */
+  height: auto; /* Maintain aspect ratio */
+}

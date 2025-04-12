@@ -1,0 +1,38 @@
+.popular-item{
+  display: flex;
+  margin-left: 130px;
+  gap: 1px;
+  border-radius: 20px;
+
+}
+
+.popular{
+  align-items: center;
+  margin-top: 100px;
+}
+
+.popular-item img{
+  height: 40vh;
+
+}
+.popular h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  font-weight: 600;
+  align-items: center;
+  color: rgb(98, 0, 128);
+  margin-left: 600px;
+}
+
+.name .popular-item{
+  color: blue;
+}
+
+.popular hr{
+  width: 10%;
+  height: 3px;
+  background-color: rgb(98, 0, 128);
+  margin-top: -20px;
+  margin-bottom: 40px;
+
+}
