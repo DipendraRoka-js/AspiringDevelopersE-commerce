@@ -48,10 +48,7 @@ const Product = mongoose.model("Product", {
         type: Number,
         required: true,
     },
-    // date:{
-    //   type: DATE,
-    //   default: Date.now,
-    // },
+
     available: {
         type: Boolean,
         default: true,
