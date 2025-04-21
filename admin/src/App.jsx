@@ -9,7 +9,8 @@ function App() {
       </header>
       <main>
         <h2>Dashboard Content</h2>
-        <p>Here you can manage your application settings and data.</p>
+        <p>Here you can manage your application settings</p>
+        <p>And send apis to backend</p>
       </main>
     </div>
   )
