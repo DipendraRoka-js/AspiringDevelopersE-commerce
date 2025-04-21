@@ -16,10 +16,10 @@ app.use(cors())
 
 mongoose.connect("mongodb://localhost:27017/ecommerce")
     .then(() => {
-        console.log("Connected to mongodb");
+        console.log("Connected to mongodbb");
     })
     .catch(err => {
-        console.log("Failed to connect to mongodb", err.message);
+        console.log("Failed to connect to mongodb atlas", err.message);
     });
 
 
