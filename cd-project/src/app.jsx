@@ -15,7 +15,7 @@ import SignUp from './Pages/SignUp';
 
 
 function App() {
-
+const num = 0;
   return (
     <div>
       <BrowserRouter>
